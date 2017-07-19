@@ -1,0 +1,9 @@
+#!/bin/bash
+
+
+echo "hello world! "
+echo "Podaj zmienna : "
+read $zmienna
+echo "Podales zmienna: " 
+
+

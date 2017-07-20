@@ -1,0 +1,16 @@
+
+#bin/bash!   
+ 
+echo "Podaj zmienna:/ Give a number: "
+read -r i
+if [ "$i" = 5 ]
+then
+echo "Ok, wygrales. "
+elif  [ "$i"  -lt 5 ]
+then
+echo " Liczba jest za mala."
+elif [ "$i" -gt  5 ]
+then
+echo "Liczba jest za duza. "
+fi
+

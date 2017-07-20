@@ -1,0 +1,47 @@
+#!/bin/bash
+
+tablica=(t1 t2 t3 t4 e e w w)
+
+
+tablica[13]=jedynka
+# unset tablica[0]
+# unset tablica[*] 
+
+echo "${tablica[12]}"
+echo "${tablica[*]}"
+echo ${#tablica[@]}
+
+
+
+echo  "Podaj swoj wybor"
+select zmienna in jeden dwa trzy
+do 
+    case $zmienna in
+        jeden)
+            echo "jeden"
+            ;;
+        dwa )
+            echo "dwa"
+            ;;
+        trzy )
+            echo "trzy"
+            ;;
+         * )
+            echo "inaczej"
+        esac
+break
+done
+
+function f 
+{
+    echo "Wywolanie funckji"
+}
+
+
+function parameters 
+{
+    echo " Paramtetry funkcji: $*  ".
+}
+
+f
+parameters jeden 4 dwa

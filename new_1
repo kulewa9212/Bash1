@@ -2,6 +2,39 @@
 #bin/bash!   
 
 
+
+
+# --------- CASE ---------------
+
+
+printf "Podaj liczbe (CASE) "
+read answer
+
+case "$answer" in 
+( jeden | dwa | trzy ) 
+echo "ok, dobra liczba"
+;;
+* ) 
+echo "slabo, cos nie tak"
+esac
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 x=0;
 until [ $x -le 2 ]; do
 echo "Napis pojawie sie po raz: $x"

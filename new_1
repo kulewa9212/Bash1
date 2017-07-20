@@ -1,6 +1,22 @@
 
 #bin/bash!   
- 
+
+
+x=0;
+until [ $x -le 2 ]; do
+echo "Napis pojawie sie po raz: $x"
+x=$[x + 1]
+done
+
+
+
+
+
+
+
+y=4; 
+while [ $y  -lt 5 ] ;
+do
 echo "Podaj zmienna:/ Give a number: "
 read -r i
 if [ "$i" = 5 ]
@@ -13,4 +29,5 @@ elif [ "$i" -gt  5 ]
 then
 echo "Liczba jest za duza. "
 fi
-
+y=$[y+1]
+done
